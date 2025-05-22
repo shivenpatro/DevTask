@@ -60,4 +60,4 @@ Key focuses during development included:
 ## Hosted Link
 
 The live hosted version of this project can be found here:
-[TO_BE_FILLED_AFTER_DEPLOYMENT]
+[https://dev-task-mocha.vercel.app/](https://dev-task-mocha.vercel.app/)
