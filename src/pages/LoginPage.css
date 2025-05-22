@@ -1,0 +1,81 @@
+.login-page-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 15px;
+}
+
+.login-page-container h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.login-page-container .sub-text {
+  font-size: 14.5px; /* Fine-tuning font size for wrapping */
+  color: #858585;
+  margin-bottom: 18px; /* Further Reduced margin */
+  line-height: 1.35; /* Adjusted line height */
+}
+
+.login-page-container .form-group {
+  position: relative; /* Needed for absolute positioning of the label */
+  margin-bottom: 8px; /* This will be the space between Email and Password groups */
+}
+
+.login-page-container .form-group label {
+  position: absolute;
+  top: -8px; 
+  left: 10px; 
+  font-size: 12px;
+  color: #6C25FF;
+  font-weight: 600; /* Changed to semibold */
+  background-color: #ffffff; 
+  padding: 0 6px; 
+  z-index: 1; 
+  display: inline-block; /* Allow width to be set */
+  width: 95px; /* Fixed width for symmetrical cutout, adjust if needed for "Email Address" */
+  text-align: left; /* Ensure text within label is left-aligned */
+}
+
+.login-page-container .form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #CBCBCB;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  /* Add a small top margin if label is purely absolute and input is first in flow,
+     or ensure input's top padding is enough if label is not affecting flow.
+     Given the label is absolute, the input's position in flow is not affected by label.
+     The label is positioned relative to form-group.
+     The input needs enough top padding so its text doesn't hide under the label if label was very low.
+     But here, label is above the input's content area.
+  */
+}
+
+.login-page-container .form-group input::placeholder {
+  color: #9B9B9B;
+  font-size: 14px;
+}
+
+.login-page-container .form-group input:focus {
+  outline: none;
+  border-color: #8A50FF; 
+}
+
+.login-page-container .btn-login {
+  width: 100%;
+  padding: 11px 0;
+  background-color: #CBCBCB;
+  color: #FFFFFF; /* Changed text color to white */
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  margin-top: -7px; /* Extremely pulling button up for almost touching space */
+}

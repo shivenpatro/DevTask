@@ -1,0 +1,24 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, input, button, textarea, select { /* Apply to form elements too */
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #f0f2f5; /* Matching App.css .app-container background for consistency */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}

@@ -1,0 +1,90 @@
+.account-settings-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Make container take available space in .page-content */
+  margin-left: -20px; /* Counteract .page-content's horizontal padding */
+  margin-right: -20px; /* Counteract .page-content's horizontal padding */
+  margin-top: -20px; /* Counteract .page-content's top padding */
+  margin-bottom: -20px; /* Counteract .page-content's bottom padding */
+}
+
+.account-settings-header {
+  background-color: #ffffff; /* White background for the header */
+  padding: 20px 20px 15px 20px; /* Adjusted top padding to restore visual space */
+  text-align: left; 
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05); 
+  z-index: 1; 
+}
+
+.account-settings-content-area {
+  background-color: #f8f8f8; /* Very light grey */
+  padding: 20px 20px 20px 20px; /* Ensure consistent padding */
+  flex-grow: 1; 
+  overflow-y: auto; 
+  display: flex; /* Added */
+  flex-direction: column; /* Added */
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image-container {
+  position: relative;
+  margin-right: 15px;
+}
+
+.profile-image-container .profile-pic {
+  width: 70px; 
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover; 
+  background-color: #e0e0e0; 
+}
+
+.profile-image-container .camera-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #6C25FF; 
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white; 
+}
+
+.profile-image-container .camera-icon::before {
+  content: '📷'; 
+  color: white;
+  font-size: 12px;
+}
+
+.profile-info .user-name {
+  font-size: 17px; 
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 3px; 
+}
+
+.profile-info .user-email {
+  font-size: 13px; 
+  color: #858585; 
+}
+
+.account-settings-content-area .info-text {
+  font-size: 14px;
+  color: #4A4A4A; 
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.account-settings-content-area .divider {
+  border: none;
+  border-top: 1px dashed #DCDCDC; 
+  margin: 0; 
+}

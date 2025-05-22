@@ -1,0 +1,64 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to top for longer pages */
+  min-height: 100vh;
+  background-color: #f0f2f5; /* A light background for the overall page */
+  padding-top: 20px; /* Add some padding at the top */
+  padding-bottom: 20px; /* Add some padding at the bottom */
+}
+
+/* This will be the main wrapper for each page's content */
+.page-content {
+  width: 100%;
+  max-width: 375px; /* Typical mobile width */
+  min-height: 667px; /* Typical mobile height, adjust as needed */
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Basic button styling - will be refined per page */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+h1, h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}

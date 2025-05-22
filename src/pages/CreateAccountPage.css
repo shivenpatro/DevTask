@@ -1,0 +1,154 @@
+.create-account-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* To allow pushing button to bottom */
+}
+
+.create-account-form-content {
+  flex-grow: 1; /* Allows this area to take up space, pushing button down */
+  overflow-y: auto; /* If content overflows, it will scroll */
+  padding-bottom: 150px; /* Further increased space for a much larger gap above button */
+}
+
+.create-account-page h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px; /* A bit more space below heading */
+  line-height: 1.2;
+  padding-top: 10px; /* Similar to login page */
+}
+
+.create-account-page .form-group {
+  position: relative;
+  margin-bottom: 6px; /* Slightly reduced spacing between form groups */
+}
+
+.create-account-page .form-group label {
+  position: absolute;
+  top: -8px; 
+  left: 10px; 
+  font-size: 12px;
+  color: #6C25FF; /* Purple label */
+  font-weight: 600; /* Changed to semibold */
+  background-color: #ffffff; 
+  padding: 0 6px; 
+  z-index: 1; 
+  display: inline-block;
+  /* width: auto; /* Let width be auto, or set fixed if needed for alignment */
+}
+
+/* General style for required asterisk */
+.required-asterisk {
+  color: red;
+  margin-left: 2px;
+}
+
+.create-account-page .form-group input[type="text"],
+.create-account-page .form-group input[type="tel"],
+.create-account-page .form-group input[type="email"],
+.create-account-page .form-group input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #CBCBCB;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.create-account-page .form-group input::placeholder {
+  color: #9B9B9B;
+  font-size: 14px;
+}
+
+.create-account-page .form-group input:focus {
+  outline: none;
+  border-color: #8A50FF; 
+}
+
+/* Radio button styling */
+.create-account-page .radio-group {
+  margin-bottom: 16px; /* Reduced margin, consistent with form-groups */
+}
+
+.create-account-page .radio-group p {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 10px;
+  font-weight: normal; /* Changed from 500 to normal */
+}
+
+.create-account-page .radio-group .radio-option {
+  display: inline-flex; /* Use inline-flex for alignment */
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.create-account-page .radio-group input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #CBCBCB; /* Thinner border for unselected */
+  border-radius: 50%;
+  outline: none;
+  margin-right: 8px;
+  position: relative;
+  top: -1px; /* Align better with text */
+}
+
+.create-account-page .radio-group input[type="radio"]:checked {
+  border-color: #6C25FF; /* Outer purple border line */
+  background-color: white; /* This creates the "blank circle" area */
+}
+
+/* This pseudo-element is now the inner purple filled circle */
+.create-account-page .radio-group input[type="radio"]:checked::before {
+  content: '';
+  display: block;
+  width: 10px; /* Size of the inner purple filled circle */
+  height: 10px; /* Size of the inner purple filled circle */
+  background-color: #6C25FF; /* Purple fill for the inner circle */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.create-account-page .radio-group .radio-option label {
+  font-size: 14px; /* Text size for the whole label container */
+  color: #858585; /* Changed to a lighter grey to match design */
+  position: static; /* Override absolute positioning from .form-group label */
+  background-color: transparent;
+  padding: 0;
+  /* font-weight is now handled by the span or default */
+}
+
+/* Style for the text part of the radio label ("Yes", "No") */
+.create-account-page .radio-group .radio-option .radio-label-text {
+  font-weight: normal;
+  margin-left: 0; /* Adjust if input margin-right is not enough or causes misalignment */
+}
+
+
+.create-account-page .btn-create-account-container {
+  padding-top: 10px; /* Space above button if form content is short */
+  margin-top: auto; /* Pushes button to bottom if .create-account-page is flex */
+}
+
+.create-account-page .btn-create-account {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #6C25FF; /* Purple background */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+}

@@ -1,0 +1,54 @@
+.welcome-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Pushes content to the bottom */
+  flex-grow: 1; /* Make this container take up available vertical space */
+  text-align: left;
+  background-color: #f9f9f9; /* Very light grey background */
+  /* If this grey needs to be edge-to-edge like Account Settings, 
+     it would need negative margins to counteract .page-content padding,
+     and then its own padding. For now, this will be an inset grey area. */
+  padding: 20px; /* Add padding since its background is now colored */
+  margin: -20px; /* Counteract .page-content padding for edge-to-edge background */
+  box-sizing: border-box; /* Ensure padding is included in height calculations with margin */
+  height: calc(100% + 40px); /* Adjust height due to negative margins if parent has fixed height/padding */
+  width: calc(100% + 40px); /* Adjust width due to negative margins */
+}
+
+.welcome-page-container h1 {
+  font-size: 28px; /* Adjusted font size */
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 8px; /* Spacing from design */
+}
+
+.welcome-page-container p {
+  font-size: 16px; /* Adjusted font size */
+  color: #858585; /* Greyish color from design */
+  margin-bottom: 30px; /* Spacing from design */
+  line-height: 1.4;
+}
+
+.welcome-page-container .btn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  display: block; /* Make Link take full width */
+  box-sizing: border-box;
+}
+
+.welcome-page-container .btn-primary {
+  background-color: #6C25FF; /* Purple from design */
+  color: white;
+  margin-bottom: 10px; /* Spacing between buttons */
+}
+
+.welcome-page-container .btn-secondary {
+  background-color: #DCD0FF; /* Adjusted light purple - trying a slightly different shade */
+  color: #000000; /* Black text */
+}
